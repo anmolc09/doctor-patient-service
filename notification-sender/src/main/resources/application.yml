@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/doctor_patient
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: false
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+    username: chawlaanmol789@gmail.com
+    password: xognfnhjplawxzjl
+email-config:
+  #message: EMAIL TESTER RUNNING -POST EMAIL API
+  subject: APPOINTMENT CONFIRMATION
+  sendTo: anmolc09@gmail.com
+  from: chawlaanmol789@gmail.com
+  #attachment: C:\Users\anmol\Downloads\chand-pe-hai-apun.jpg
+server:
+  port: 8081
